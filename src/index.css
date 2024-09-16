@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#VolumeSlider {
+  appearance: none;
+  background: #4d4d4d;
+  width: 93px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+#VolumeSlider:hover {
+  appearance: none;
+  background: #1db954;
+  width: 93px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+#VolumeSlider::-webkit-slider-thumb {
+  appearance: none;
+}
+
+#VolumeSlider:hover::-webkit-slider-thumb {
+  appearance: none;
+  background: white;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#MusicTime {
+  appearance: none;
+  background: #4d4d4d;
+  width: 512px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+#MusicTime:hover {
+  appearance: none;
+  background: #1db954;
+  width: 512px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+#MusicTime::-webkit-slider-thumb {
+  appearance: none;
+}
+
+#MusicTime:hover::-webkit-slider-thumb {
+  appearance: none;
+  background: white;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.underlineText:hover{
+text-decoration: underline;
+}
