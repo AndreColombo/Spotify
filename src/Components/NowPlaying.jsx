@@ -145,17 +145,17 @@ export default function NowPlaying() {
           <div className="bg-22 rounded-lg p-4">
             <div className="flex justify-between pb-3.5">
               <h1 className="font-bold">A seguir</h1>
-              <button className="font-bold text-sm underlineText">Abrir fila</button>
+              <button className="font-bold text-sm underlineText">
+                Abrir fila
+              </button>
             </div>
             <div className="flex items-center space-x-3">
-              <img src="/Musics/LightsUp.png" className="h-12 rounded" />
+              <img src="/Musics/Speechless.png" className="h-12 rounded" />
               <div className="space-y-1">
                 <h1 className="text-sm font-semibold line-clamp-1">
-                  Lights Up - Dimitri Vegas & Like Mike Edit
+                  Speechless
                 </h1>
-                <p className="text-sm text-B3">
-                  Nicky Romero, Dimitri Vegas & Lime Mike
-                </p>
+                <p className="text-sm text-B3">Vowed, Jonas Eb</p>
               </div>
             </div>
           </div>

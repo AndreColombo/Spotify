@@ -64,6 +64,10 @@
   cursor: pointer;
 }
 
-.underlineText:hover{
-text-decoration: underline;
+.underlineText:hover {
+  text-decoration: underline;
+}
+
+.whiteText:hover {
+  color: white;
 }

@@ -2,7 +2,9 @@ export default function Header() {
   return (
     <>
       <header className="w-header flex items-center mb-2 justify-between">
-        <img src="/SpotifyWhiteLogo.png" className="h-8 ml-5 " />
+        <a href="/">
+          <img src="/SpotifyWhiteLogo.png" className="h-8 ml-5 " />
+        </a>
         <div className="flex space-x-2.5">
           <button className="flex h-12 w-12 bg-F1 rounded-full justify-center items-center">
             <img src="/Icons/HomeGray.png" className="h-5 w-5" />

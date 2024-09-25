@@ -1,7 +1,7 @@
 export default function Player() {
   return (
     <>
-      <main className="flex h-player justify-between items-center px-2">
+      <main className="flex justify-between items-center px-2 my-3">
         <div className="flex justify-start items-center space-x-4 w-1/3">
           <img src="/Musics/LightsUp.png" className="h-14 rounded" />
           <div>
@@ -16,7 +16,7 @@ export default function Player() {
         </div>
 
         <div className="flex flex-col justify-center items-center w-1/3">
-          <div className="flex space-x-6 justify-center items-center">
+          <div className="flex space-x-6 justify-center items-center mb-1">
             <img src="/Icons/ShuffleGray.png" className="h-3.5" />
             <img src="/Icons/PreviousMusicGray.png" className="h-3.5" />
             <img src="/Icons/Pause.png" className="h-8" />
