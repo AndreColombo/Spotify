@@ -1,8 +1,8 @@
 export default function NowPlaying() {
   return (
     <>
-      <aside className="h-playing w-playing bg-12 rounded-lg p-4 overflow-y-scroll">
-        <div className="flex justify-between items-center pb-4 bg-12">
+      <aside className="h-playing w-playing bg-12 rounded-lg px-4 overflow-y-scroll">
+        <div className="sticky top-0 z-10 flex justify-between items-center py-4 bg-12">
           <h1 className="font-bold w-fit underlineText">
             <a href="">Músicas Curtidas</a>
           </h1>
@@ -142,7 +142,7 @@ export default function NowPlaying() {
             </ul>
           </div>
 
-          <div className="bg-22 rounded-lg p-4">
+          <div className="bg-22 rounded-lg p-4 mb-4">
             <div className="flex justify-between pb-3.5">
               <h1 className="font-bold">A seguir</h1>
               <button className="font-bold text-sm underlineText">

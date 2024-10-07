@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export default async function conectaNaDb() {
+export default async function connectDb() {
   mongoose.connect(
     "mongodb+srv://admin:admin@cluster0.jtyxt.mongodb.net/Spotify?retryWrites=true&w=majority&appName=Cluster0"
   );

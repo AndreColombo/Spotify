@@ -17,6 +17,9 @@ export default {
         playing: "420px",
         download: "120px",
       },
+      height:{
+        gradient: "320px"
+      }
     },
   },
   plugins: [],
