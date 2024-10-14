@@ -155,7 +155,7 @@ export default function NowPlaying() {
                 <h1 className="text-sm font-semibold line-clamp-1">
                   Speechless
                 </h1>
-                <p className="text-sm text-B3">Vowed, Jonas Eb</p>
+                <p className="text-sm text-B3 underlineText">Vowed, Jonas Eb</p>
               </div>
             </div>
           </div>

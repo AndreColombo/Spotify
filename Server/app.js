@@ -1,7 +1,9 @@
 import express from "express";
 import cors from "cors";
 import connectDb from "./db.js";
-import artista from "./Models/artistas.js";
+import playlist from "./Models/Playlists.js";
+import musica from "./Models/Musicas.js";
+import artista from "./Models/Artistas.js";
 
 const app = express();
 app.use(cors());
@@ -13,6 +15,16 @@ conexao.on("error", (erro) => {
 
 conexao.once("open", () => {
   console.log("Conectado no MongoDB");
+});
+
+app.get("/playlists", async (req, res) => {
+  const listaPlaylists = await playlist.find({});
+  res.status(200).json(listaPlaylists);
+});
+
+app.get("/musicas", async (req, res) => {
+  const listaMusicas = await musica.find({});
+  res.status(200).json(listaMusicas);
 });
 
 app.get("/artistas", async (req, res) => {
