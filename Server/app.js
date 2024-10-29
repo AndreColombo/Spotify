@@ -1,9 +1,10 @@
 import express from "express";
 import cors from "cors";
 import connectDb from "./db.js";
-import playlist from "./Models/Playlists.js";
-import musica from "./Models/Musicas.js";
 import artista from "./Models/Artistas.js";
+import musica from "./Models/Musicas.js";
+import playlist from "./Models/Playlists.js";
+import section from "./Models/Sections.js";
 
 const app = express();
 app.use(cors());
@@ -17,9 +18,9 @@ conexao.once("open", () => {
   console.log("Conectado no MongoDB");
 });
 
-app.get("/playlists", async (req, res) => {
-  const listaPlaylists = await playlist.find({});
-  res.status(200).json(listaPlaylists);
+app.get("/artistas", async (req, res) => {
+  const listaArtistas = await artista.find({});
+  res.status(200).json(listaArtistas);
 });
 
 app.get("/musicas", async (req, res) => {
@@ -27,9 +28,14 @@ app.get("/musicas", async (req, res) => {
   res.status(200).json(listaMusicas);
 });
 
-app.get("/artistas", async (req, res) => {
-  const listaArtistas = await artista.find({});
-  res.status(200).json(listaArtistas);
+app.get("/playlists", async (req, res) => {
+  const listaPlaylists = await playlist.find({});
+  res.status(200).json(listaPlaylists);
+});
+
+app.get("/sections", async (req, res) => {
+  const listaSections = await section.find({});
+  res.status(200).json(listaSections);
 });
 
 app.listen(3000, () => {

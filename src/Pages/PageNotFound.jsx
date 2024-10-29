@@ -5,16 +5,23 @@ export default function PageNotFound() {
         <img
           src="/ErrorPageLogo.svg"
           alt="Spotify Green Logo"
-          className="h-14 w-14"
+          className="h-14 w-14 mb-9"
         />
         <div className="flex flex-col items-center">
-          <h1 className="text-5xl font-bold">Página não encontrada</h1>
-          <p className="text-B3">Não encontramos a página que você queria.</p>
-          <div className="flex flex-col">
-            <a href="https://open.spotify.com/">
-              <button className="bg-white border border-B3 rounded-full text-black">Início</button>
+          <h1 className="text-5xl font-bold mb-4">Página não disponível</h1>
+          <p className="text-B3">Algo deu errado. Tente de novo mais tarde.</p>
+          <div className="flex flex-col items-center">
+            <a href="../" className="w-auto my-8">
+              <button className="bg-white border border-B3 rounded-full text-black font-medium py-2.5 px-7">
+                Início
+              </button>
             </a>
-            <a href="https://support.spotify.com/">Ajuda</a>
+            <a
+              href="https://support.spotify.com/"
+              className="underlineText font-bold w-screen text-center"
+            >
+              Ajuda
+            </a>
           </div>
         </div>
       </main>

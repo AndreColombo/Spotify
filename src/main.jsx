@@ -6,6 +6,8 @@ import "./index.css";
 import Home from "./Pages/Home.jsx";
 import Search from "./Pages/Search.jsx";
 import DownloadSpotify from "./Pages/DownloadSpotify.jsx";
+import Playlist from "./Pages/Playlist.jsx";
+import Section from "./Pages/Section.jsx";
 import PageNotFound from "./Pages/PageNotFound.jsx";
 
 const container = document.getElementById("root");
@@ -19,6 +21,8 @@ root.render(
           <Route index element={<Home />} />
           <Route path="search" element={<Search />} />
           <Route path="download" element={<DownloadSpotify />} />
+          <Route path="/playlist/:_id" element={<Playlist />} />
+          <Route path="/section/:_id" element={<Section />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>

@@ -1,19 +1,8 @@
-export default function Player() {
+export default function Player({ children }) {
   return (
     <>
       <main className="flex justify-between items-center px-2 my-3">
-        <div className="flex justify-start items-center space-x-4 w-1/3">
-          <img src="/Musics/LightsUp.png" className="h-14 rounded" />
-          <div>
-            <h1 className="text-sm font-semibold">
-              Lights Up - Dimitri Vegas & Like Mike Edit
-            </h1>
-            <p className="text-xs text-B3">
-              Nicky Romero, Dimitri Vegas & Lime Mike
-            </p>
-          </div>
-          <img src="/Icons/LikedMusic.png" className="h-4" />
-        </div>
+        {children}
 
         <div className="flex flex-col justify-center items-center w-1/3">
           <div className="flex space-x-6 justify-center items-center mb-1">

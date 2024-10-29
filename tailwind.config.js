@@ -14,12 +14,11 @@ export default {
         main: "1012px",
         search: "474px",
         sidebar: "72px",
-        playing: "420px",
-        download: "120px",
+        section: "920px",
       },
-      height:{
-        gradient: "320px"
-      }
+      height: {
+        gradient: "320px",
+      },
     },
   },
   plugins: [],
