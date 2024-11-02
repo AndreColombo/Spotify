@@ -1,4 +1,8 @@
 export default function Header() {
+  const handleInputClick = () => {
+    window.location.href = "/search";
+  };
+
   return (
     <>
       <header className="w-screen flex justify-between items-center mb-2 px-4">
@@ -16,6 +20,7 @@ export default function Header() {
             type="text"
             placeholder="O que você quer ouvir?"
             className="w-full h-11 bg-F1 rounded-full"
+            onClick={handleInputClick}
           />
         </div>
 

@@ -1,7 +1,7 @@
 export default function NowPlaying({ children }) {
   return (
     <>
-      <aside className="w-[381px] bg-12 rounded-lg overflow-y-scroll">
+      <aside className="min-w-[280px] max-w-[420px] bg-12 rounded-lg overflow-y-scroll">
         <div className="sticky top-0 z-10 flex justify-between items-center py-3 bg-12 px-4 drop-shadow-xl">
           <h1 className="font-bold text-sm w-fit underlineText">
             <a href="">Músicas Curtidas</a>

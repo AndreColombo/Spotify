@@ -5,6 +5,7 @@ import artista from "./Models/Artistas.js";
 import musica from "./Models/Musicas.js";
 import playlist from "./Models/Playlists.js";
 import section from "./Models/Sections.js";
+import genre from "./Models/Genres.js";
 
 const app = express();
 app.use(cors());
@@ -36,6 +37,11 @@ app.get("/playlists", async (req, res) => {
 app.get("/sections", async (req, res) => {
   const listaSections = await section.find({});
   res.status(200).json(listaSections);
+});
+
+app.get("/genres", async (req, res) => {
+  const listaGenres = await genre.find({});
+  res.status(200).json(listaGenres);
 });
 
 app.listen(3000, () => {
