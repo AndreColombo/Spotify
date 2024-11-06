@@ -11,12 +11,24 @@ const app = express();
 app.use(cors());
 const conexao = await connectDb();
 
+app.use(
+  cors({
+    origin: "*",
+    credentials: true,
+  }),
+  express.json()
+);
+
 conexao.on("error", (erro) => {
   console.error("Erro ao conectar no MongoDB", erro);
 });
 
 conexao.once("open", () => {
   console.log("Conectado no MongoDB");
+});
+
+app.get("/", (req, res) => {
+  res.send("Olá API!");
 });
 
 app.get("/artistas", async (req, res) => {
