@@ -16,10 +16,10 @@ export default function App() {
   useEffect(() => {
     setIsLoading(true);
     Promise.all([
-      fetch("http://localhost:3000/playlists").then((res) => res.json()),
-      fetch("http://localhost:3000/sections").then((res) => res.json()),
-      fetch("http://localhost:3000/artistas").then((res) => res.json()),
-      fetch("http://localhost:3000/musicas").then((res) => res.json()),
+      fetch("https://spotify-andre-backend.vercel.app/playlists").then((res) => res.json()),
+      fetch("https://spotify-andre-backend.vercel.app/sections").then((res) => res.json()),
+      fetch("https://spotify-andre-backend.vercel.app/artistas").then((res) => res.json()),
+      fetch("https://spotify-andre-backend.vercel.app/musicas").then((res) => res.json()),
     ])
       .then(([playlistsData, sectionsData, artistasData, musicasData]) => {
         setPlaylists(playlistsData);
